@@ -1,0 +1,89 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="QH_COMPUTER.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - My ASP.NET Application</title>
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="../Content/style.css" rel="stylesheet">
+</head>
+
+<body>
+        <form runat="server">
+            <asp:ScriptManager runat="server">
+                <Scripts>
+                    <asp:ScriptReference Name="MsAjaxBundle" />
+                    <asp:ScriptReference Name="jquery" />
+                    <asp:ScriptReference Name="bootstrap" />
+                </Scripts>
+            </asp:ScriptManager>
+
+          <nav class="navbar navbar-inverse Menu1">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+              </button>
+              <a class="navbar-brand" href="TrangChu.aspx"><img src="Images/QH-COMPUTER.png" /></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav Menu2">
+                <%--<li class="active"><a href="TrangChu.aspx">Trang Chủ</a></li>--%>
+                <%--<li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Trang Chủ <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Trang Chủ</a></li>
+                    <li><a href="#">Phần Mềm</a></li>
+                    <li><a href="#">Linh Kiện</a></li>
+                    <li><a href="#">LapTop</a></li>
+                  </ul>
+                </li>--%>
+                  <li><a href="TrangChu.aspx">Trang Chủ</a></li>
+                <li><a href="PhanMem.aspx">Phần Mềm</a></li>
+                <li><a href="LinhKien.aspx">Linh Kiện</a></li>
+                <li><a href="LapTop">LapTop</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+                    <!--******thêm logo*****-->
+            <div id="Logo" style="text-align: center">
+             <a runat="server" href="~/">
+             <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/QH-COMPUTER.png"
+            BorderStyle="None" />
+             </a><br />
+            </div>
+             <!--***********************-->                        <div id="CategoryMenu" style="text-align: center" class="listbook">
+                 <asp:ListView ID="categoryList"
+                ItemType="QH_COMPUTER.Models.Category" runat="server"
+                SelectMethod="GetCategories" >
+                 <ItemTemplate>
+                 <b>
+                 <a href="/LapTop.aspx?id=<%#: Item.CategoryID %>">
+                 <%#: Item.CategoryName %>
+                 </a>
+                 </b>
+                 </ItemTemplate>
+                 </asp:ListView>
+                </div>
+        <div class="container">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder> 
+
+            <footer class="cuoitrang">
+                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
+            </footer>
+        </div>
+        </form>
+</body>
+</html>

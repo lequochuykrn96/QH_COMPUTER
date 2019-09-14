@@ -1,0 +1,70 @@
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.navbar-brand img {
+    width: 180px;
+}
+
+#Logo {
+    margin: 2% 0% 0% 0%;
+}
+
+.listbook a {
+    margin: 0% 1% 0% 0%;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 23px;
+    border-left: solid 2px #4a6526;
+    padding: 2px;
+    padding-left: 5px;
+    background: #9dce5a;
+    border-radius: 10px 0px 10px 0px;
+}
+
+    .listbook a:hover {
+        background: #537723;
+        transition-duration: 0.7s;
+        color: #ffffff;
+    }
+
+.NoiDung {
+    margin: 2% 1% 2% 1%;
+    width: 96%;
+    background: #9dce5ae0;
+    padding: 1%;
+}
+
+.soansach {
+}
+
+    .soansach img {
+        width: 350px;
+        height: 300px;
+        margin: 0% 0% 0% 0%;
+        text-align: center;
+    }
+
+    .soansach table {
+        background: #ffffff14;
+        width: 350px;
+        height: 300px;
+        margin: 0px 50px 0px 0px;
+        border: 2px solid black;
+        text-align: center;
+    }
+
+.cuoitrang {
+    background: #8BC34A;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    margin: 2% 0% 1% 0%;
+}
