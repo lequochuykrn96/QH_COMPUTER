@@ -1604,7 +1604,7 @@ pre code {
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
-  padding:2%;
+  padding:1%;
 }
 .row {
   margin-right: -15px;
@@ -2373,17 +2373,18 @@ th {
   max-width: 100%;
   margin-bottom: 20px;
 }
-.table > thead > tr > th,
-.table > tbody > tr > th,
-.table > tfoot > tr > th,
-.table > thead > tr > td,
-.table > tbody > tr > td,
-.table > tfoot > tr > td {
-  padding: 8px;
-  line-height: 1.42857143;
-  vertical-align: top;
-  border-top: 1px solid #ddd;
-}
+    .table > thead > tr > th,
+    .table > tbody > tr > th,
+    .table > tfoot > tr > th,
+    .table > thead > tr > td,
+    .table > tbody > tr > td,
+    .table > tfoot > tr > td {
+        /*padding: 8px;*/
+        line-height: 1.42857143;
+        vertical-align: top;
+        /*border-top: 1px solid #ddd;*/
+        background: #91c158;
+    }
 .table > thead > tr > th {
   vertical-align: bottom;
   border-bottom: 2px solid #ddd;
@@ -4745,7 +4746,6 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 }
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {
-    background: #99cc5e;
     width:100%;
 }
 .navbar-inverse .navbar-link {
