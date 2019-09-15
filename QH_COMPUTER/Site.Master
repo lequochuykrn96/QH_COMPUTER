@@ -31,7 +31,7 @@
               </button>
               <a class="navbar-brand" href="TrangChu.aspx"><img src="Images/QH-COMPUTER.png" /></a>
             </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
+            <div class="collapse navbar-collapse Menu3" id="myNavbar">
               <ul class="nav navbar-nav Menu2">
                 <%--<li class="active"><a href="TrangChu.aspx">Trang Chủ</a></li>--%>
                 <%--<li class="dropdown">
@@ -48,7 +48,7 @@
                 <li><a href="LinhKien.aspx">Linh Kiện</a></li>
                 <li><a href="LapTop">LapTop</a></li>
               </ul>
-              <ul class="nav navbar-nav navbar-right">
+              <ul class="nav navbar-nav navbar-right menuright">
                 <li><a href="#"><span class="glyphicon glyphicon-user"></span> Đăng Ký</a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Đăng Nhập</a></li>
               </ul>
@@ -75,12 +75,25 @@
                  </asp:ListView>
                 </div>
         <div class="container-fluid" >
-            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            <div class="container-fluid">
+              <div class="listpick">
+                <div class="listpick1" >
+                              <ul class="list-group" >
+                <li class="list-group-item"><a href="~/" >Danh Mục Sản Phẩm</a></li>
+                <li class="list-group-item"><a href="~/">Laptop Gaming</a></li>
+                <li class="list-group-item"><a href="~/">Linh Kiện</a></li>
+              </ul>
+                </div>
+                <div class="listpick2">
+                  <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
+                </div>
+              </div>
+            </div>      
             <footer class="cuoitrang">
                 <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
             </footer>
         </div>
-        </form>
+        </form>   
 </body>
 </html>

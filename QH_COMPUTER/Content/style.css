@@ -5,7 +5,7 @@ a {
 ul {
     list-style: none;
 }
-
+/*Menu*/
 .navbar-brand img {
     width: 180px;
 }
@@ -13,6 +13,37 @@ ul {
 .Menu1 {
     position: fixed;
     top: 0;
+}
+
+.menuright {
+    padding-right: 20px;
+}
+
+.listpick1 {
+    margin: 1%;
+    width: 20%;
+    float: left;
+}
+
+    .listpick1 li {
+        background: #a8d46d;
+        font-size: 20px;
+    }
+
+    .listpick1 a {
+        color: white;
+        list-style: none;
+        text-decoration: none;
+    }
+
+    .listpick1 li:hover {
+        background: #526b2f;
+    }
+
+.listpick2 {
+    margin: 1%;
+    width: 76%;
+    float: right;
 }
 
 #Logo {
@@ -97,16 +128,16 @@ ul {
 }
 
 .tc1 {
-    background: #004fff;
+    /*background: #004fff;*/
     width: 98%;
-    height: 200px;
+    height: auto;
     border: solid 2px black;
     padding: 1%;
     margin: 1% 1% 1% 1%;
 }
 
 .tc2 {
-    background: #004fff;
+    /*background: #004fff;*/
     width: 98%;
     height: 200px;
     border: solid 2px black;
@@ -115,7 +146,7 @@ ul {
 }
 
 .tc3 {
-    background: #004fff;
+    /*background: #004fff;*/
     width: 98%;
     height: 200px;
     border: solid 2px black;
