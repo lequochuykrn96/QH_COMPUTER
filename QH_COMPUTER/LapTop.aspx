@@ -4,11 +4,8 @@
         <div class="container">
          <div class="row">
          <div>
-         <hgroup>
-         <h2><%: Page.Title %></h2>
-         </hgroup>
          <asp:ListView ID="bookList" runat="server" DataKeyNames="BookID"
-        GroupItemCount="3"
+        GroupItemCount="2"
          ItemType="QH_COMPUTER.Models.Book" SelectMethod="GetBooks">
          <EmptyDataTemplate>
          <table >
