@@ -1,6 +1,8 @@
 ﻿<%@ Page Title="LapTop" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="LapTop.aspx.cs" Inherits="QH_COMPUTER.WebForm1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <section>
+    <section class="example">
+        <div class="container">
+         <div class="row">
          <div>
          <hgroup>
          <h2><%: Page.Title %></h2>
@@ -25,7 +27,7 @@
          </GroupTemplate>
          <ItemTemplate>
          <td runat="server" class="soansach">
-         <table>
+         <table class="table">
          <tr>
          <td>
          <a href="LapTop.aspx?bookID=<%#:Item.BookID%>"> 
@@ -33,21 +35,20 @@
          </td>
          </tr>
          <tr>
-         <td>
+         <td class="baolap" >
          <a href="chitietlaptop.aspx?bookID=<%#:Item.BookID%>">
          <span>
          <%#:Item.BookName%>
          </span>
-         </a>
          <br />
          <span>
          <b>Giá tiền: </b><%#:String.Format("{0:c}",Item.UnitPrice)%>
          </span>
          <br />
+             </a>
          </td>
          </tr>
          <tr>
-         <td>&nbsp;</td>
          </tr>
          </table>
          </p>
@@ -72,5 +73,7 @@
          </LayoutTemplate>
          </asp:ListView>
          </div>
+             </div>
+            </div>
          </section>
 </asp:Content>

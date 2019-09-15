@@ -19,12 +19,10 @@
                     <asp:ScriptReference Name="MsAjaxBundle" />
                     <asp:ScriptReference Name="jquery" />
                     <asp:ScriptReference Name="bootstrap" />
-
                 </Scripts>
             </asp:ScriptManager>
 
-          <nav class="navbar navbar-inverse Menu1">
-          <div class="container-fluid">
+          <nav class="navbar navbar-inverse navbar-fixed-top Menu1">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                 <span class="icon-bar"></span>
@@ -55,11 +53,10 @@
                 <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Đăng Nhập</a></li>
               </ul>
             </div>
-          </div>
         </nav>
                     <!--******thêm logo*****-->
-            <div id="Logo" style="text-align: center">
-             <a runat="server" href="~/">
+            <div id="Logo" style="text-align: center; margin-top:80px" class="container-fluid">
+             <a runat="server" href="~/TrangChu.aspx">
              <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/QH-COMPUTER.png"
             BorderStyle="None" />
              </a><br />
@@ -77,7 +74,7 @@
                  </ItemTemplate>
                  </asp:ListView>
                 </div>
-        <div class="container">
+        <div class="container-fluid" >
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
             <footer class="cuoitrang">
