@@ -65,6 +65,7 @@ ul {
     padding-left: 5px;
     background: #9dce5a;
     border-radius: 10px 0px 10px 0px;
+    text-decoration: none;
 }
 
     .listbook a:hover {
@@ -131,8 +132,6 @@ ul {
     /*background: #004fff;*/
     width: 98%;
     height: auto;
-    border: solid 2px black;
-    padding: 1%;
     margin: 1% 1% 1% 1%;
 }
 
@@ -152,4 +151,13 @@ ul {
     border: solid 2px black;
     padding: 1%;
     margin: 1% 1% 1% 1%;
+}
+
+.traiprev {
+    background-repeat: repeat-x;
+}
+
+.phaiprev {
+    right: 0;
+    left: auto;
 }

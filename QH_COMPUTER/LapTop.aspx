@@ -27,7 +27,7 @@
          <table class="table">
          <tr>
          <td>
-         <a href="LapTop.aspx?bookID=<%#:Item.BookID%>"> 
+         <a href="chitietlaptop.aspx?bookID=<%#:Item.BookID%>"> 
          <img src ="/Images/<%#:Item.ImagePath%>"/></a>
          </td>
          </tr>

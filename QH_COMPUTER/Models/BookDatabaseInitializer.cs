@@ -49,7 +49,7 @@ namespace QH_COMPUTER.Models
                     BookName = "Dell-inspiron-3576-i3-7020u",
                     Description = ".....",
                     ImagePath ="DELL/dell-inspiron-3576-i3-7020u-450-600x600.png",
-                    UnitPrice = 16.04f,
+                    UnitPrice = 16000000,
                     CategoryID = 1
                     },
                 new Book
@@ -58,7 +58,7 @@ namespace QH_COMPUTER.Models
                     BookName = "Dell-vostro-3468-i3-7020u",
                     Description = "......",
                     ImagePath ="DELL/dell-vostro-3468-i3-7020u-70161069-15-600x600.jpg",
-                    UnitPrice = 19.60f,
+                    UnitPrice = 19000000,
                     CategoryID = 1
                 },
                 new Book
@@ -67,7 +67,7 @@ namespace QH_COMPUTER.Models
                     BookName = "Apple-Macbook-Air-2019-i5-16ghz-8gb-128gb",
                     Description = "......",
                     ImagePath ="APPLE/apple-macbook-air-2019-i5-16ghz-8gb-128gb-mvfm2sa-13-32-600x600.jpg",
-                    UnitPrice = 26.73f,
+                    UnitPrice = 55000000,
                     CategoryID = 2
                 },
                 new Book
@@ -76,7 +76,7 @@ namespace QH_COMPUTER.Models
                     BookName = "Apple-Macbook-Air-i5-5350u",
                     Description = ".....",
                     ImagePath ="APPLE/apple-macbook-air-mqd32sa-a-i5-5350u-600x600.jpg",
-                    UnitPrice = 23.79f,
+                    UnitPrice = 34000000,
                     CategoryID = 2
                 },
                 new Book
@@ -85,7 +85,7 @@ namespace QH_COMPUTER.Models
                     BookName = "Acer-Aspire-i3-7020u",
                     Description = ".....",
                     ImagePath ="ACER/acer-aspire-3-a315-54-30fk-i3-7020u-4gb-1tb-win10-18-600x600.jpg",
-                    UnitPrice = 16.04f,
+                    UnitPrice = 13000000,
                     CategoryID = 3
                 },
                 new Book
@@ -94,7 +94,7 @@ namespace QH_COMPUTER.Models
                     BookName = "Acer-Aspire-a314-31",
                     Description = ".....",
                     ImagePath ="ACER/acer-aspire-a314-31-c2ux-nxgnssv008-600x600.jpg",
-                    UnitPrice = 16.04f,
+                    UnitPrice = 18000000,
                     CategoryID = 3
                 },
                 new Book
@@ -103,7 +103,7 @@ namespace QH_COMPUTER.Models
                     BookName = "Asus-X407ua",
                     Description = ".....",
                     ImagePath ="ASUS/asus-x407ua-bv351t-600x600.jpg",
-                    UnitPrice = 16.04f,
+                    UnitPrice = 15000000,
                     CategoryID = 4
                 },
                 new Book
@@ -112,7 +112,7 @@ namespace QH_COMPUTER.Models
                     BookName = "Asus-X407ua-i37020u",
                     Description = "......",
                     ImagePath ="ASUS/asus-x407ua-i37020u-4gb-1tb-14-win1-0-bv345t-xam-2-2-600x600.jpg",
-                    UnitPrice = 16.04f,
+                    UnitPrice = 160000000,
                     CategoryID = 4
                 },
             };
