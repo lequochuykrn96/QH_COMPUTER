@@ -76,14 +76,16 @@
                 </div>
         <div class="container-fluid" >
             <div class="container-fluid">
+                <div class="container-fluid">
               <div class="listpick">
                 <div class="listpick1" >
                               <ul class="list-group" >
-                <li class="list-group-item"><a href="~/" >Danh Mục Sản Phẩm</a></li>
-                <li class="list-group-item"><a href="~/">Laptop Gaming</a></li>
-                <li class="list-group-item"><a href="~/">Linh Kiện</a></li>
+                <li class="list-group-item"><a href="#" >Danh Mục Sản Phẩm</a></li>
+                <li class="list-group-item"><a href="#">Laptop Gaming</a></li>
+                <li class="list-group-item"><a href="#">Linh Kiện</a></li>
               </ul>
                 </div>
+                  </div>
                 <div class="listpick2">
                   <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>

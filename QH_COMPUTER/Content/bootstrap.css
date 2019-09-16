@@ -9,6 +9,9 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+a {
+    text-decoration:none;
+}
 body {
   margin: 0;
 }
@@ -6397,7 +6400,7 @@ button.close {
   top: 0;
   bottom: 0;
   left: 0;
-  width: 15%;
+  width: 2%;
   font-size: 20px;
   color: #fff;
   text-align: center;
