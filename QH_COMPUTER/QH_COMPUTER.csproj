@@ -150,6 +150,8 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="AddToCart.aspx" />
+    <Content Include="ShoppingCart.aspx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -204,6 +206,7 @@
       <DependentUpon>LinhKien.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Models\CartItem.cs" />
     <Compile Include="PhanMem.aspx.cs">
       <DependentUpon>PhanMem.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -215,6 +218,7 @@
     <Compile Include="Models\BookContext.cs" />
     <Compile Include="Models\BookDatabaseInitializer.cs" />
     <Compile Include="Models\Category.cs" />
+    <Compile Include="Logic\ShoppingCartActions.cs" />
     <Compile Include="TrangChu.aspx.cs">
       <DependentUpon>TrangChu.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -260,6 +264,20 @@
     </Compile>
     <Compile Include="chitietlaptop.aspx.designer.cs">
       <DependentUpon>chitietlaptop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddToCart.aspx.cs">
+      <DependentUpon>AddToCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddToCart.aspx.designer.cs">
+      <DependentUpon>AddToCart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShoppingCart.aspx.cs">
+      <DependentUpon>ShoppingCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShoppingCart.aspx.designer.cs">
+      <DependentUpon>ShoppingCart.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup />
