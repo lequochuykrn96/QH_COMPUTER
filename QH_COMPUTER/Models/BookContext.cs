@@ -11,6 +11,6 @@ namespace QH_COMPUTER.Models
         public BookContext() : base("QH_COMPUTER")
         { }
         public DbSet<Category> Categories { get; set; }
-        public DbSet<Book> Books { get; set; }
+        public DbSet<Book> Books { get; set; }        public DbSet<CartItem> ShoppingCartItems { get; set; }
     }
 }

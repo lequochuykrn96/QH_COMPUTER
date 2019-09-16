@@ -42,6 +42,11 @@
          <b>Giá tiền: </b><%#:String.Format("{0:c}",Item.UnitPrice)%>
          </span>
          <br />
+         <a href="AddToCart.aspx?bookID=<%#:Item.BookID%>">
+         <span>
+         <b>Thêm Vào Giỏ<b>
+         </span>
+         </a>
              </a>
          </td>
          </tr>
