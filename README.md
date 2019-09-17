@@ -19,6 +19,13 @@
 </br>
 <img src="IMGGioiThieu/lap6.jpg" alt="drawing" width="100%" />
 
+### Giỏ hàng tiện ích
+*Nhanh chóng và tiện lợi trong việc đặt hàng  *
+
+<img src="IMGGioiThieu/giohang1.jpg" alt="drawing" width="100%" />
+
+<img src="IMGGioiThieu/giohang2.jpg" alt="drawing" width="100%" />
+
 
 
 
