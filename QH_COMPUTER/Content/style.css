@@ -13,11 +13,36 @@ ul {
 .Menu1 {
     position: fixed;
     top: 0;
+    background: url('../Images/thanhmenu.jpg');
+    background-size: cover;
 }
 
 .menuright {
     padding-right: 20px;
 }
+
+.Timkiem {
+    margin: 1% 3% 0% 0%;
+    height: auto;
+    display: flex;
+    font-size: 40%;
+}
+
+    .Timkiem input {
+        width: 100%;
+        margin: 1% 2% 0% 0%;
+    }
+
+    .Timkiem button {
+        font-weight: bold;
+        margin: 0% 0% 0% 2%;
+        height: 36px;
+    }
+
+        .Timkiem button:hover {
+            background: #a8d46d;
+            color: white;
+        }
 
 .listpick1 {
     margin: 1%;

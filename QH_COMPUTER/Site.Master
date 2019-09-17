@@ -48,10 +48,17 @@
                 <li><a href="LinhKien.aspx">Linh Kiện</a></li>
                 <li><a href="LapTop">LapTop</a></li>
               </ul>
-              <ul class="nav navbar-nav navbar-right menuright">
+<%--              <ul class="nav navbar-nav navbar-right menuright">
                 <li><a href="#"><span class="glyphicon glyphicon-user"></span> Đăng Ký</a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Đăng Nhập</a></li>
-              </ul>
+              </ul>--%>
+                <!-- Search -->
+                <div class=" navbar-right Timkiem" role="search">
+                <div class="form-group">
+                <input type="text" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-default">Search</button>
+                </div>
             </div>
         </nav>
                     <!--******thêm logo*****-->
@@ -79,7 +86,7 @@
                 <div class="container-fluid">
               <div class="listpick">
                 <div class="listpick1" >
-                              <ul class="list-group" >
+                <ul class="list-group" >
                 <li class="list-group-item"><a href="#" >Danh Mục Sản Phẩm</a></li>
                 <li class="list-group-item"><a href="#">Laptop Gaming</a></li>
                 <li class="list-group-item"><a href="#">Linh Kiện</a></li>
