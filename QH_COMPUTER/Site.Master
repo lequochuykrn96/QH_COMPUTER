@@ -96,6 +96,9 @@
                 <p>&copy; <%: DateTime.Now.Year %> - QH-COMPUTER</p>
             </footer>
         </div>
+            <ul class="hiengiohang">
+            <li><span class="glyphicon glyphicon-shopping-cart"></span><a runat="server" href="~/ShoppingCart" ID="cartCount"></a></li>
+            </ul>
         </form>   
 </body>
 </html>

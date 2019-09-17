@@ -1,4 +1,5 @@
-﻿using QH_COMPUTER.Models;
+﻿using QH_COMPUTER.Logic;
+using QH_COMPUTER.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,6 +20,16 @@ namespace QH_COMPUTER
             var _db = new QH_COMPUTER.Models.BookContext();
             IQueryable<Category> query = _db.Categories;
             return query;
+        }
+        protected void Page_PreRender(object sender, EventArgs e)
+        {
+            using (ShoppingCartActions usersShoppingCart = new
+            ShoppingCartActions())
+            {
+                string cartStr = string.Format("Giỏ Hàng ({0})",
+                usersShoppingCart.GetCount());
+                cartCount.InnerText = cartStr;
+            }
         }
     }
 }
