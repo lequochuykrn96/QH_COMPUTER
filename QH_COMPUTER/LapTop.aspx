@@ -44,7 +44,7 @@
          <br />
          <a href="AddToCart.aspx?bookID=<%#:Item.BookID%>">
          <span>
-         <b>Thêm Vào Giỏ<b>
+         <b class="bntthemvaogio"><span class="glyphicon glyphicon-plus"></span>Thêm Vào Giỏ<b>
          </span>
          </a>
              </a>
@@ -57,7 +57,7 @@
          </td>
          </ItemTemplate>
          <LayoutTemplate>
-         <table style="width:100%;">
+         <table>
          <tbody>
          <tr>
          <td>

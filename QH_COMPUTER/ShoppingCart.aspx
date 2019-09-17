@@ -6,7 +6,7 @@
      ShowFooter="True" GridLines="Vertical" CellPadding="4"
      ItemType="QH_COMPUTER.Models.CartItem"
      SelectMethod ="GetShoppingCartItems"
-     CssClass="table table-striped table-bordered" >
+     CssClass="table table-borderless table-dark table-textcenter" >
      <Columns><asp:BoundField DataField="BookID" HeaderText="ID"
      SortExpression="BookID" />
      <asp:BoundField DataField="Book.BookName" HeaderText="Tên Máy" />

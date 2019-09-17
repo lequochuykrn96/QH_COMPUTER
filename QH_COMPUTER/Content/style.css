@@ -44,6 +44,7 @@ ul {
     margin: 1%;
     width: 76%;
     float: right;
+    padding: 1%;
 }
 
 #Logo {
@@ -111,6 +112,17 @@ ul {
         background: #54693b;
     }
 
+.baolap {
+    background: #a8d46d;
+}
+
+.bntthemvaogio {
+    background: red;
+    float: right;
+    width: 20%;
+    border-radius: 20px 0px 0px 0px;
+}
+
 .cuoitrang {
     background: #8BC34A;
     text-align: center;
@@ -161,3 +173,25 @@ ul {
     right: 0;
     left: auto;
 }
+
+.hiengiohang {
+    color: white;
+}
+
+    .hiengiohang li {
+        background: red;
+        color: white;
+        padding: 1%;
+        position: fixed;
+        bottom: 0;
+        width: 130px;
+        right: 0;
+        border-radius: 20px 0px 0px 0px;
+        font-weight: bold;
+    }
+
+    .hiengiohang a {
+        color: white;
+        margin-left: 5%;
+        font-size: 14px;
+    }
