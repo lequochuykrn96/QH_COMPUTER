@@ -44,7 +44,6 @@ ul {
     margin: 1%;
     width: 76%;
     float: right;
-    padding: 1%;
 }
 
 #Logo {
@@ -86,7 +85,7 @@ ul {
 }
 
     .soansach img {
-        width: 350px;
+        width: 400px;
         height: 300px;
         margin: 0% 0% 0% 0%;
         text-align: center;
@@ -95,7 +94,7 @@ ul {
 
     .soansach table {
         background: #ffffff14;
-        width: 350px;
+        width: 400px;
         height: 300px;
         margin: 0px 50px 0px 0px;
         border: 1px solid #91c158;
@@ -112,6 +111,17 @@ ul {
         background: #54693b;
     }
 
+.chitietgiohang {
+    width: 20%;
+    border: solid 1px #a8d46d;
+}
+
+    .chitietgiohang b {
+        color: white;
+        width: 40%;
+        text-align: center;
+    }
+
 .baolap {
     background: #a8d46d;
 }
@@ -119,7 +129,8 @@ ul {
 .bntthemvaogio {
     background: red;
     float: right;
-    width: 20%;
+    width: 40%;
+    text-align: center;
     border-radius: 20px 0px 0px 0px;
 }
 
@@ -194,4 +205,22 @@ ul {
         color: white;
         margin-left: 5%;
         font-size: 14px;
+    }
+/*Gio Hang  */
+.giohangcenter {
+    text-align: center;
+    background: #000000;
+    color: white;
+    padding: 1%;
+    margin-bottom: 100px;
+}
+
+.giohang {
+    background: #a8d46d;
+    text-align: center;
+    padding: 1%;
+}
+
+    .giohang td {
+        padding: 1%;
     }
