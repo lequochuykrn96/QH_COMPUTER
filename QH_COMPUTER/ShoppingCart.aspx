@@ -1,31 +1,29 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ShoppingCart.aspx.cs" Inherits="QH_COMPUTER.WebForm4" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-
-        <div id="ShoppingCartTitle" runat="server" class="ContentHead"><h1>Giỏ Hàng</h1></div>
+    <div class="giohang">
+        <div id="ShoppingCartTitle" runat="server" class="ContentHead"><h1 style="font-weight:bold">Giỏ Hàng</h1></div>
      <asp:GridView ID="CartList" runat="server" AutoGenerateColumns="False"
      ShowFooter="True" GridLines="Vertical" CellPadding="4"
      ItemType="QH_COMPUTER.Models.CartItem"
-     SelectMethod ="GetShoppingCartItems"
+     SelectMethod ="GetShoppingCartItems" 
      CssClass="table table-borderless table-dark table-textcenter" >
-     <Columns><asp:BoundField DataField="BookID" HeaderText="ID"
-     SortExpression="BookID" />
-     <asp:BoundField DataField="Book.BookName" HeaderText="Tên Máy" />
-     <asp:BoundField DataField="Book.UnitPrice" HeaderText="Giá Tiền"
-     DataFormatString="{0:c}"/>
-     <asp:TemplateField HeaderText="Số Lượng">
+     <Columns><asp:BoundField DataField="BookID" HeaderText="ID" SortExpression="BookID" HeaderStyle-CssClass="giohangcenter"/>
+     <asp:BoundField DataField="Book.BookName" HeaderText="Tên Máy" HeaderStyle-CssClass="giohangcenter"/>
+     <asp:BoundField DataField="Book.UnitPrice" HeaderText="Giá Tiền" DataFormatString="{0:c}" HeaderStyle-CssClass="giohangcenter"/>
+     <asp:TemplateField HeaderText="Số Lượng" HeaderStyle-CssClass="giohangcenter">
      <ItemTemplate>
      <asp:TextBox ID="PurchaseQuantity" Width="40"
      runat="server" Text="<%#: Item.Quantity %>"></asp:TextBox>
      </ItemTemplate>
      </asp:TemplateField>
-     <asp:TemplateField HeaderText="Tổng">
+     <asp:TemplateField HeaderText="Tổng" HeaderStyle-CssClass="giohangcenter">
      <ItemTemplate>
      <%#: String.Format("{0:c}",
      ((Convert.ToDouble(Item.Quantity)) *
     Convert.ToDouble(Item.Book.UnitPrice)))%>
      </ItemTemplate>
      </asp:TemplateField>
-     <asp:TemplateField HeaderText="Xóa">
+     <asp:TemplateField HeaderText="Xóa" HeaderStyle-CssClass="giohangcenter">
      <ItemTemplate>
      <asp:CheckBox id="Remove" runat="server"></asp:CheckBox>
      </ItemTemplate>
@@ -47,4 +45,5 @@
         </td>
         </tr>
         </table>
+        </div>
 </asp:Content>

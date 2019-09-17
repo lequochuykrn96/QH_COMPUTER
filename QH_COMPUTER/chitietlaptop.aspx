@@ -8,11 +8,17 @@
      <h1><%#:Item.BookName %></h1>
      </div>
      <br />
+     <div class="table-responsive">
      <table>
      <tr>
-     <td>
+     <td class="chitietgiohang">
      <img src="/Images/<%#:Item.ImagePath %>"
-     style="border:solid; height:225px" alt="<%#:Item.BookName %>"/>
+     style="height:250px; width:300px" alt="<%#:Item.BookName %>"/>
+         <a href="AddToCart.aspx?bookID=<%#:Item.BookID%>">
+         <span>
+         <b class="bntthemvaogio"><span class="glyphicon glyphicon-plus"></span>Thêm Vào Giỏ<b>
+         </span>
+         </a>
      </td>
      <td>&nbsp;</td>
      <td style="vertical-align: top; text-align:left;">
@@ -22,10 +28,11 @@
     %></span>
      <br />
      <span><b>STT:</b>&nbsp;<%#:Item.BookID %></span>
-     <br />
+     <br />  
      </td>
      </tr>
      </table>
+         </div>
      </ItemTemplate>
      </asp:FormView>
 </asp:Content>

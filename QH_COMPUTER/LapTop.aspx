@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="LapTop" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="LapTop.aspx.cs" Inherits="QH_COMPUTER.WebForm1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <section class="example">
-        <div class="container">
+        <div class="table-responsive">
          <div class="row">
          <div>
          <asp:ListView ID="bookList" runat="server" DataKeyNames="BookID"
@@ -76,6 +76,6 @@
          </asp:ListView>
          </div>
              </div>
-            </div>
+             </div>
          </section>
 </asp:Content>
