@@ -1,5 +1,6 @@
 a {
     text-decoration: none;
+    list-style: none;
 }
 
 ul {
@@ -48,22 +49,29 @@ ul {
     margin: 1%;
     width: 20%;
     float: left;
+    height: auto;
 }
 
-    .listpick1 li {
-        background: #a8d46d;
-        font-size: 20px;
-    }
+.banner {
+    padding: 1%;
+    width: 100%;
+    height: auto;
+}
 
-    .listpick1 a {
-        color: white;
-        list-style: none;
-        text-decoration: none;
-    }
+.listpick1 li {
+    background: #98d24c;
+    font-size: 20px;
+}
 
-    .listpick1 li:hover {
-        background: #526b2f;
-    }
+.listpick1 a {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+
+.listpick1 li:hover {
+    background: #526b2f;
+}
 
 .listpick2 {
     margin: 1%;
@@ -102,7 +110,7 @@ ul {
 .NoiDung {
     margin: 2% 1% 2% 1%;
     width: 96%;
-    background: #9dce5ae0;
+    background: #98d24c;
     padding: 1%;
 }
 
@@ -148,7 +156,7 @@ ul {
     }
 
 .baolap {
-    background: #a8d46d;
+    background: #98d24c;
 }
 
 .bntthemvaogio {
@@ -170,10 +178,10 @@ ul {
 }
 /* Trangchu */
 .tcchinh {
-    background: #a8d46d;
+    background: #98d24c;
     width: 100%;
     height: auto;
-    border: solid 1px black;
+    border: solid 1px white;
 }
 
 .tc1 {
@@ -183,22 +191,69 @@ ul {
     margin: 1% 1% 1% 1%;
 }
 
-.tc2 {
-    /*background: #004fff;*/
+.listtrangchu {
+    background: #00000036;
     width: 98%;
-    height: 200px;
-    border: solid 2px black;
+    height: auto;
+    /*         border: solid 2px white; */
     padding: 1%;
     margin: 1% 1% 1% 1%;
 }
 
-.tc3 {
-    /*background: #004fff;*/
-    width: 98%;
-    height: 200px;
-    border: solid 2px black;
+.menutrangchu {
+    width: 100%;
+    height: 30px;
+    border-bottom: solid 2px white;
+    transition-duration: 2s;
+}
+
+    .menutrangchu a {
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        padding: 1%;
+        border-bottom: 2px solid;
+        border-right: 2px solid;
+        transition-duration: 2s;
+    }
+
+        .menutrangchu a:hover {
+            text-decoration: none;
+            transition-duration: 2s;
+            border-bottom: 2px solid black;
+            border-right: 2px solid black;
+            color: black;
+        }
+
+    .menutrangchu:hover {
+        transition-duration: 2s;
+        border-bottom: 2px solid black;
+    }
+
+
+.noidungtrangchu {
+    width: 100%;
+    height: auto;
+    display: flex;
+    overflow: auto;
+}
+
+.nd1 {
+    margin: 1%;
+    width: 250px;
+    text-align: center;
+}
+
+    .nd1 a {
+        color: white;
+        padding: 2%;
+        width: 100%;
+        font-weight: bold;
+    }
+
+.textnd1 {
+    background: #98d24c;
     padding: 1%;
-    margin: 1% 1% 1% 1%;
 }
 
 .traiprev {
@@ -210,6 +265,12 @@ ul {
     left: auto;
 }
 
+.imgtrangchu {
+    width: 250px;
+    margin: 1%;
+    height: 250px;
+}
+/*  */
 .hiengiohang {
     color: white;
 }
