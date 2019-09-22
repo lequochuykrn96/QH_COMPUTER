@@ -119,6 +119,17 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Images\banner1.png" />
+    <Content Include="Images\linhkien\AEvrIHN.png" />
+    <Content Include="Images\linhkien\glaive-rgb-aluminum.png" />
+    <Content Include="Images\linhkien\img.png" />
+    <Content Include="Images\phanmem\pmlightroom.png" />
+    <Content Include="Images\phanmem\pmantivirus.png" />
+    <Content Include="Images\phanmem\pmkaspersky.png" />
+    <Content Include="Images\QH-COMPUTER.png" />
+    <Content Include="Images\slide\slide1.jpg" />
+    <Content Include="Images\slide\slide3.jpg" />
+    <Content Include="Images\slide\slide2.jpg" />
     <Content Include="Images\thanhmenu.jpg" />
     <Content Include="LinhKien.aspx" />
     <Content Include="PhanMem.aspx" />
@@ -138,7 +149,6 @@
     <Content Include="Images\DELL\dell-vostro-3468-i3-7020u-70161069-15-600x600.jpg" />
     <Content Include="Images\DELL\dell-vostro-3568-i3-6006u-vti3027w-450x300-600x600.jpg" />
     <Content Include="Images\DELL\dell-vostro-3568-vti32072w-vv-600x600.jpg" />
-    <Content Include="Images\QH-COMPUTER.png" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />

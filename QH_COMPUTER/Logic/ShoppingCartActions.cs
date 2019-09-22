@@ -126,8 +126,7 @@ namespace QH_COMPUTER.Logic
                 }
                 catch (Exception exp)
                 {
-                    throw new Exception("ERROR: Unable to Update Cart Database - " +
-                    exp.Message.ToString(), exp);
+                    throw new Exception("ERROR: Unable to Update Cart Database - " + exp.Message.ToString(), exp);
                 }
             }
         }

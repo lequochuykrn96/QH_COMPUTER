@@ -91,7 +91,11 @@
                 <li class="list-group-item"><a href="#">Laptop Gaming</a></li>
                 <li class="list-group-item"><a href="#">Linh Kiện</a></li>
               </ul>
+               <div class="banner">
+                   <img src="Images/banner1.png" alt="banner" style="width:100%;">
+                  </div>
                 </div>
+                  
                   </div>
                 <div class="listpick2">
                   <asp:ContentPlaceHolder ID="MainContent" runat="server">
