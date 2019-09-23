@@ -31,7 +31,14 @@
 
 <img src="IMGGioiThieu/laptop1.jpg" alt="drawing" width="100%" />
 
-### 5.Giỏ hàng:
+### 5.Chi Tiết Laptop
+*Bạn có thể xem chi tiết thông số kỹ thuật món hàng mà bạn muốn xem để có 1 sự lựa chọn phù hợp với bạn*
+
+<img src="IMGGioiThieu/chitietgiohang.jpg" alt="drawing" width="100%" />
+
+<img src="IMGGioiThieu/chitietgiohang1.jpg" alt="drawing" width="100%" />
+
+### 6.Giỏ hàng:
 *Hiển thị rõ chi tiết và giá tiền tổng giá trị món hàng bạn mua, không những thế bạn có thể bỏ món hàng bạn ko muốn mua chỉ 1 cú click và tiếp tục mua hàng bên Quốc Huy-Computer của chúng tôi, hàng bạn chọn sẽ hiện thị trực tiếp số lượng gở góc phải của giỏ hàng*
 
 <img src="IMGGioiThieu/giohang.jpg" alt="drawing" width="100%" />

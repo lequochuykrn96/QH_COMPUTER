@@ -1,11 +1,13 @@
 ﻿<%@ Page Title="CTLaptop" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="chitietlaptop.aspx.cs" Inherits="QH_COMPUTER.WebForm2" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="tcchinh">
+     <div class="chitietlap">
     <asp:FormView ID="bookDetail" runat="server"
     ItemType="QH_COMPUTER.Models.Book" SelectMethod ="GetDetails"
      RenderOuterTable="false">
      <ItemTemplate>
      <div>
-     <h1><%#:Item.BookName %></h1>
+     <h1 style="color:white"><%#:Item.BookName %></h1>
      </div>
      <br />
      <div class="table-responsive">
@@ -20,8 +22,8 @@
          </span>
          </a>
      </td>
-     <td>&nbsp;</td>
-     <td style="vertical-align: top; text-align:left;">
+         <td>&nbsp;</td>
+     <td style="vertical-align: top; text-align:left;" class="chitietthongso">
      <b>Thông số kỹ thuật:</b><br /><%#:Item.Description %>
      <br />
      <span><b>Giá tiền:</b>&nbsp;<%#: String.Format("{0:c}",Item.UnitPrice)
@@ -35,4 +37,6 @@
          </div>
      </ItemTemplate>
      </asp:FormView>
+         </div>
+        </div>
 </asp:Content>

@@ -144,16 +144,11 @@ ul {
         background: #54693b;
     }
 
-.chitietgiohang {
-    width: 20%;
-    border: solid 1px #a8d46d;
+.chitietgiohang b {
+    color: white;
+    width: 40%;
+    text-align: center;
 }
-
-    .chitietgiohang b {
-        color: white;
-        width: 40%;
-        text-align: center;
-    }
 
 .baolap {
     background: #98d24c;
@@ -310,3 +305,28 @@ ul {
     .giohang td {
         padding: 1%;
     }
+/*  Chi tiet laptop*/
+.chitietlap {
+    padding: 2%;
+    font-weight: bold;
+}
+
+    .chitietlap img {
+        padding: 2%;
+        font-weight: bold;
+    }
+
+    .chitietlap table {
+        border: solid 1px #ffffff;
+    }
+
+.chitietgiohang {
+    width: 20%;
+    border: solid 1px #ffffff;
+}
+
+.chitietthongso {
+    font-size: 18px;
+    padding: 1%;
+    color: white;
+}
