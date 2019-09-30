@@ -15,13 +15,13 @@ namespace QH_COMPUTER
         {
 
         }
-        public IQueryable<Book> GetDetails([QueryString("bookID")] int? bookId)
+        public IQueryable<LapTop> GetDetails([QueryString("laptopID")] int? laptopId)
         {
-            var _db = new QH_COMPUTER.Models.BookContext();
-            IQueryable<Book> query = _db.Books;
-            if (bookId.HasValue && bookId > 0)
+            var _db = new QH_COMPUTER.Models.TenDL();
+            IQueryable<LapTop> query = _db.LapTops;
+            if (laptopId.HasValue && laptopId > 0)
             {
-                query = query.Where(p => p.BookID == bookId);
+                query = query.Where(p => p.LaptopID == laptopId);
             }
             else
             {

@@ -14,9 +14,9 @@ namespace QH_COMPUTER
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string rawId = Request.QueryString["BookID"];
-            int bookId;
-            if (!String.IsNullOrEmpty(rawId) && int.TryParse(rawId, out bookId))
+            string rawId = Request.QueryString["LaptopID"];
+            int LaptopId;
+            if (!String.IsNullOrEmpty(rawId) && int.TryParse(rawId, out LaptopId))
             {
                 using (ShoppingCartActions usersShoppingCart = new
                 ShoppingCartActions())
@@ -26,9 +26,9 @@ namespace QH_COMPUTER
             }
             else
             {
-                Debug.Fail("ERROR : We should never get to AddToCart.aspx without a BookId.");
+                Debug.Fail("ERROR : We should never get to AddToCart.aspx without a LaptopId.");
                
-                throw new Exception("ERROR : It is illegal to load AddToCart.aspx without setting a BookId.");
+                throw new Exception("ERROR : It is illegal to load AddToCart.aspx without setting a LaptopId.");
            }
             Response.Redirect("ShoppingCart.aspx");
         }

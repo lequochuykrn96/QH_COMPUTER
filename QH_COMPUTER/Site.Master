@@ -68,14 +68,13 @@
             BorderStyle="None" />
              </a><br />
             </div>
-             <!--***********************-->                        <div id="CategoryMenu" style="text-align: center" class="listbook">
+             <!--***********************-->                        <div id="CategoryMenu" style="text-align: center" class="listlaptop">
                  <asp:ListView ID="categoryList"
-                ItemType="QH_COMPUTER.Models.Category" runat="server"
-                SelectMethod="GetCategories" >
+                ItemType="QH_COMPUTER.Models.Hang" runat="server" SelectMethod="GetHangs" >
                  <ItemTemplate>
                  <b>
-                 <a href="/LapTop.aspx?id=<%#: Item.CategoryID %>">
-                 <%#: Item.CategoryName %>
+                 <a href="/LapTop.aspx?id=<%#: Item.HangID %>">
+                 <%#: Item.TenHang %>
                  </a>
                  </b>
                  </ItemTemplate>

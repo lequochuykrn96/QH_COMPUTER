@@ -9,7 +9,7 @@ namespace QH_COMPUTER.Logic
     internal class ShoppingCartActions : IDisposable
     {
         public string ShoppingCartId { get; set; }
-        private BookContext _db = new BookContext();
+        private TenDL _db = new TenDL();
         public const string CartSessionKey = "CartId";
         public void AddToCart(int id)
         {
@@ -17,17 +17,17 @@ namespace QH_COMPUTER.Logic
             ShoppingCartId = GetCartId();
             var cartItem = _db.ShoppingCartItems.SingleOrDefault(
             c => c.CartId == ShoppingCartId
-            && c.BookId == id);
+            && c.LaptopId == id);
             if (cartItem == null)
             {
                 // Create a new cart item if no cart item exists.
                 cartItem = new CartItem
                 {
                     ItemId = Guid.NewGuid().ToString(),
-                    BookId = id,
+                    LaptopId = id,
                     CartId = ShoppingCartId,
-                    Book = _db.Books.SingleOrDefault(
-               p => p.BookID == id),
+                    LapTop = _db.LapTops.SingleOrDefault(
+               p => p.LaptopID == id),
                     Quantity = 1,
                     DateCreated = DateTime.Now
                 };
@@ -83,7 +83,7 @@ namespace QH_COMPUTER.Logic
             total = (decimal?)(from cartItems in _db.ShoppingCartItems
                                where cartItems.CartId == ShoppingCartId
                                select (int?)cartItems.Quantity *
-                                cartItems.Book.UnitPrice).Sum();
+                                cartItems.LapTop.GiaBan).Sum();
             return total ?? decimal.Zero;
         }
         public ShoppingCartActions GetCart(HttpContext context)
@@ -97,7 +97,7 @@ namespace QH_COMPUTER.Logic
         public void UpdateShoppingCartDatabase(String cartId, ShoppingCartUpdates[]
        CartItemUpdates)
         {
-            using (var db = new QH_COMPUTER.Models.BookContext())
+            using (var db = new QH_COMPUTER.Models.TenDL())
             {
                 try
                 {
@@ -108,16 +108,16 @@ namespace QH_COMPUTER.Logic
                         // Lặp qua các hàng trong giỏ hàng
                         for (int i = 0; i < CartItemCount; i++)
                         {
-                            if (cartItem.Book.BookID == CartItemUpdates[i].BookId)
+                            if (cartItem.LapTop.LaptopID == CartItemUpdates[i].LaptopId)
                             {
                                 if (CartItemUpdates[i].PurchaseQuantity < 1 ||
                                CartItemUpdates[i].RemoveItem == true)
                                 {
-                                    RemoveItem(cartId, cartItem.BookId);
+                                    RemoveItem(cartId, cartItem.LaptopId);
                                 }
                                 else
                                 {
-                                    UpdateItem(cartId, cartItem.BookId,
+                                    UpdateItem(cartId, cartItem.LaptopId,
                                    CartItemUpdates[i].PurchaseQuantity);
                                 }
                             }
@@ -132,12 +132,12 @@ namespace QH_COMPUTER.Logic
         }
         public void RemoveItem(string removeCartID, int removeBookID)
         {
-            using (var _db = new QH_COMPUTER.Models.BookContext())
+            using (var _db = new QH_COMPUTER.Models.TenDL())
             {
                 try
                 {
                     var myItem = (from c in _db.ShoppingCartItems
-                                  where c.CartId == removeCartID && c.Book.BookID ==
+                                  where c.CartId == removeCartID && c.LapTop.LaptopID ==
                                  removeBookID
                                   select c).FirstOrDefault();
                     if (myItem != null)
@@ -157,12 +157,12 @@ namespace QH_COMPUTER.Logic
         public void UpdateItem(string updateCartID, int updateBookID, int
         quantity)
         {
-            using (var _db = new QH_COMPUTER.Models.BookContext())
+            using (var _db = new QH_COMPUTER.Models.TenDL())
             {
                 try
                 {
                     var myItem = (from c in _db.ShoppingCartItems
-                                  where c.CartId == updateCartID && c.Book.BookID ==
+                                  where c.CartId == updateCartID && c.LapTop.LaptopID ==
                                  updateBookID
                                   select c).FirstOrDefault();
                     if (myItem != null)
@@ -203,7 +203,7 @@ namespace QH_COMPUTER.Logic
         }
         public struct ShoppingCartUpdates
         {
-            public int BookId;
+            public int LaptopId;
             public int PurchaseQuantity;
             public bool RemoveItem;
         }
