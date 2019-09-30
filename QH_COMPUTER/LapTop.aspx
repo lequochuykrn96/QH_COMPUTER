@@ -4,9 +4,8 @@
         <div class="table-responsive">
          <div class="row">
          <div>
-         <asp:ListView ID="bookList" runat="server" DataKeyNames="BookID"
-        GroupItemCount="2"
-         ItemType="QH_COMPUTER.Models.Book" SelectMethod="GetBooks">
+         <asp:ListView ID="bookList" runat="server" DataKeyNames="LapTopID" GroupItemCount="2"
+         ItemType="QH_COMPUTER.Models.LapTop" SelectMethod="GetLapTops">
          <EmptyDataTemplate>
          <table >
          <tr>
@@ -27,22 +26,22 @@
          <table class="table">
          <tr>
          <td>
-         <a href="chitietlaptop.aspx?bookID=<%#:Item.BookID%>"> 
-         <img src ="/Images/<%#:Item.ImagePath%>"/></a>
+         <a href="chitietlaptop.aspx?LaptopID=<%#:Item.LaptopID%>"> 
+         <img src ="/Images/<%#:Item.HinhAnh%>"/></a>
          </td>
          </tr>
          <tr>
          <td class="baolap" >
-         <a href="chitietlaptop.aspx?bookID=<%#:Item.BookID%>">
+         <a href="chitietlaptop.aspx?LaptopID=<%#:Item.LaptopID%>">
          <span>
-         <%#:Item.BookName%>
+         <%#:Item.TenLaptop%>
          </span>
          <br />
          <span>
-         <b>Giá tiền: </b><%#:String.Format("{0:c}",Item.UnitPrice)%>
+         <b>Giá tiền: </b><%#:String.Format("{0:c}",Item.GiaBan)%>
          </span>
          <br />
-         <a href="AddToCart.aspx?bookID=<%#:Item.BookID%>">
+         <a href="AddToCart.aspx?LaptopID=<%#:Item.LaptopID%>">
          <span>
          <b class="bntthemvaogio"><span class="glyphicon glyphicon-plus"></span>Thêm Vào Giỏ<b>
          </span>

@@ -87,7 +87,7 @@ ul {
         width: 60%;
     }
 
-.listbook a {
+.listlaptop a {
     margin: 0% 1% 0% 0%;
     color: #ffffff;
     text-align: center;
@@ -101,7 +101,7 @@ ul {
     text-decoration: none;
 }
 
-    .listbook a:hover {
+    .listlaptop a:hover {
         background: #537723;
         transition-duration: 0.7s;
         color: #ffffff;

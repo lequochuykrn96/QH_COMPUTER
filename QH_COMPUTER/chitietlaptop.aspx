@@ -3,20 +3,19 @@
     <div class="tcchinh">
      <div class="chitietlap">
     <asp:FormView ID="bookDetail" runat="server"
-    ItemType="QH_COMPUTER.Models.Book" SelectMethod ="GetDetails"
-     RenderOuterTable="false">
+    ItemType="QH_COMPUTER.Models.LapTop" SelectMethod ="GetDetails" RenderOuterTable="false">
      <ItemTemplate>
      <div>
-     <h1 style="color:white"><%#:Item.BookName %></h1>
+     <h1 style="color:white"><%#:Item.TenLaptop %></h1>
      </div>
      <br />
      <div class="table-responsive">
      <table>
      <tr>
      <td class="chitietgiohang">
-     <img src="/Images/<%#:Item.ImagePath %>"
-     style="height:250px; width:300px" alt="<%#:Item.BookName %>"/>
-         <a href="AddToCart.aspx?bookID=<%#:Item.BookID%>">
+     <img src="/Images/<%#:Item.HinhAnh %>"
+     style="height:250px; width:300px" alt="<%#:Item.TenLaptop %>"/>
+         <a href="AddToCart.aspx?LapTopID=<%#:Item.LaptopID%>">
          <span>
          <b class="bntthemvaogio"><span class="glyphicon glyphicon-plus"></span>Thêm Vào Giỏ<b>
          </span>
@@ -24,12 +23,12 @@
      </td>
          <td>&nbsp;</td>
      <td style="vertical-align: top; text-align:left;" class="chitietthongso">
-     <b>Thông số kỹ thuật:</b><br /><%#:Item.Description %>
+     <b>Thông số kỹ thuật:</b><br /><%#:Item.MoTa %>
      <br />
-     <span><b>Giá tiền:</b>&nbsp;<%#: String.Format("{0:c}",Item.UnitPrice)
+     <span><b>Giá tiền:</b>&nbsp;<%#: String.Format("{0:c}",Item.GiaBan)
     %></span>
      <br />
-     <span><b>STT:</b>&nbsp;<%#:Item.BookID %></span>
+     <span><b>STT:</b>&nbsp;<%#:Item.LaptopID %></span>
      <br />  
      </td>
      </tr>

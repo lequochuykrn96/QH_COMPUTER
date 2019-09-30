@@ -15,10 +15,10 @@ namespace QH_COMPUTER
         {
 
         }
-        public IQueryable<Category> GetCategories()
+        public IQueryable<Hang> GetHangs()
         {
-            var _db = new QH_COMPUTER.Models.BookContext();
-            IQueryable<Category> query = _db.Categories;
+            var _db = new QH_COMPUTER.Models.TenDL();
+            IQueryable<Hang> query = _db.Hangs;
             return query;
         }
         protected void Page_PreRender(object sender, EventArgs e)

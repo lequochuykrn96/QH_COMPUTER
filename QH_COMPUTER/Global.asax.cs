@@ -19,7 +19,7 @@ namespace QH_COMPUTER
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             // Initialize the book database.
-            Database.SetInitializer(new BookDatabaseInitializer());
+            Database.SetInitializer(new LapTopDATA());
         }
     }
 }

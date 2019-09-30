@@ -7,9 +7,9 @@
      ItemType="QH_COMPUTER.Models.CartItem"
      SelectMethod ="GetShoppingCartItems" 
      CssClass="table table-borderless table-dark table-textcenter" >
-     <Columns><asp:BoundField DataField="BookID" HeaderText="ID" SortExpression="BookID" HeaderStyle-CssClass="giohangcenter"/>
-     <asp:BoundField DataField="Book.BookName" HeaderText="Tên Máy" HeaderStyle-CssClass="giohangcenter"/>
-     <asp:BoundField DataField="Book.UnitPrice" HeaderText="Giá Tiền" DataFormatString="{0:c}" HeaderStyle-CssClass="giohangcenter"/>
+     <Columns><asp:BoundField DataField="LaptopID" HeaderText="ID" SortExpression="LaptopID" HeaderStyle-CssClass="giohangcenter"/>
+     <asp:BoundField DataField="LapTop.Tenlaptop" HeaderText="Tên Máy" HeaderStyle-CssClass="giohangcenter"/>
+     <asp:BoundField DataField="LapTop.GiaBan" HeaderText="Giá Tiền" DataFormatString="{0:c}" HeaderStyle-CssClass="giohangcenter"/>
      <asp:TemplateField HeaderText="Số Lượng" HeaderStyle-CssClass="giohangcenter">
      <ItemTemplate>
      <asp:TextBox ID="PurchaseQuantity" Width="40"
@@ -20,7 +20,7 @@
      <ItemTemplate>
      <%#: String.Format("{0:c}",
      ((Convert.ToDouble(Item.Quantity)) *
-    Convert.ToDouble(Item.Book.UnitPrice)))%>
+    Convert.ToDouble(Item.LapTop.GiaBan)))%>
      </ItemTemplate>
      </asp:TemplateField>
      <asp:TemplateField HeaderText="Xóa" HeaderStyle-CssClass="giohangcenter">

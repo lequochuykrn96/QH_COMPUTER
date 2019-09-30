@@ -48,7 +48,7 @@ namespace QH_COMPUTER
                 {
                     IOrderedDictionary rowValues = new OrderedDictionary();
                     rowValues = GetValues(CartList.Rows[i]);
-                    cartUpdates[i].BookId = Convert.ToInt32(rowValues["BookID"]);
+                    cartUpdates[i].LaptopId = Convert.ToInt32(rowValues["LaptopID"]);
                     CheckBox cbRemove = new CheckBox();
                     cbRemove = (CheckBox)CartList.Rows[i].FindControl("Remove");
                     cartUpdates[i].RemoveItem = cbRemove.Checked;
