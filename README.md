@@ -53,9 +53,19 @@
 
 <img src="IMGGioiThieu/data1.jpg" alt="drawing" width="100%" />
 
+*Table Hãng*
+
 <img src="IMGGioiThieu/data2.jpg" alt="drawing" width="100%" />
 
+<img src="IMGGioiThieu/data4.jpg" alt="drawing" width="100%" />
+
+*Table Laptop*
+
 <img src="IMGGioiThieu/data3.jpg" alt="drawing" width="100%" />
+
+<img src="IMGGioiThieu/data5.jpg" alt="drawing" width="100%" />
+
+
 
 
 
