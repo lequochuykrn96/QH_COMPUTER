@@ -1,3 +1,27 @@
+
+### Cơ Sở Dữ Liệu
+*Xem và chỉnh sữa dữ liệu tiện lợi và nhanh chóng*
+
+<img src="IMGGioiThieu/data.jpg" alt="drawing" width="40%" /> <img src="IMGGioiThieu/data0.jpg" alt="drawing" width="40%" />
+
+*Liên kết dữ liệu hợp lý và dễ chỉnh sửa khi không may gặp sự cố*
+
+<img src="IMGGioiThieu/data1.jpg" alt="drawing" width="100%" />
+
+# Table Hãng
+
+<img src="IMGGioiThieu/data2.jpg" alt="drawing" width="70%" />
+
+<img src="IMGGioiThieu/data4.jpg" alt="drawing" width="70%" />
+
+# Table Laptop
+
+<img src="IMGGioiThieu/data3.jpg" alt="drawing" width="70%" />
+
+<img src="IMGGioiThieu/data5.jpg" alt="drawing" width="70%" />
+
+
+
 # Web Quốc Huy-Computer ASP.NET 
   *Bạn có thể lựa chọn, tham khảo và đặt mua laptop mà bạn muôn mua cực kỳ tiện lợi*
 
@@ -43,28 +67,6 @@
 *Hiển thị rõ chi tiết và giá tiền tổng giá trị món hàng bạn mua, không những thế bạn có thể bỏ món hàng bạn ko muốn mua chỉ 1 cú click và tiếp tục mua hàng bên Quốc Huy-Computer của chúng tôi, hàng bạn chọn sẽ hiện thị trực tiếp số lượng gở góc phải của giỏ hàng*
 
 <img src="IMGGioiThieu/giohang.jpg" alt="drawing" width="100%" />
-
-### 7.Cơ Sở Dữ Liệu
-*Xem và chỉnh sữa dữ liệu tiện lợi và nhanh chóng*
-
-<img src="IMGGioiThieu/data.jpg" alt="drawing" width="40%" /> <img src="IMGGioiThieu/data0.jpg" alt="drawing" width="40%" />
-
-*Liên kết dữ liệu hợp lý và dễ chỉnh sửa khi không may gặp sự cố*
-
-<img src="IMGGioiThieu/data1.jpg" alt="drawing" width="100%" />
-
-*Table Hãng*
-
-<img src="IMGGioiThieu/data2.jpg" alt="drawing" width="100%" />
-
-<img src="IMGGioiThieu/data4.jpg" alt="drawing" width="100%" />
-
-*Table Laptop*
-
-<img src="IMGGioiThieu/data3.jpg" alt="drawing" width="100%" />
-
-<img src="IMGGioiThieu/data5.jpg" alt="drawing" width="100%" />
-
 
 
 
