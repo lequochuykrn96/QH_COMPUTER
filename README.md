@@ -12,11 +12,15 @@
 
 <img src="IMGGioiThieu/data2.jpg" alt="drawing" width="70%" />
 
+*Dữ liệu của Hãng*
+
 <img src="IMGGioiThieu/data4.jpg" alt="drawing" width="70%" />
 
 # Table Laptop
 
 <img src="IMGGioiThieu/data3.jpg" alt="drawing" width="70%" />
+
+*Dữ liệu của Laptop*
 
 <img src="IMGGioiThieu/data5.jpg" alt="drawing" width="70%" />
 
